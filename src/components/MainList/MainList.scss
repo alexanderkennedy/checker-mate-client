@@ -1,0 +1,115 @@
+@use "../../styles/partials/variables.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
+
+.full-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+
+  &__header {
+    height: 4rem;
+    font-size: 1.5rem;
+  }
+
+  &__table {
+    width: 90vw;
+    border: 2px solid forestgreen;
+    border-radius: 4%;
+    margin: 3%;
+    outline-offset: 2px solid forestgreen;
+
+    outline: 3px dashed rgb(35, 58, 42);
+    outline-offset: 10px;
+    border: 1px solid blue;
+    margin: 15px;
+    overflow: hidden;
+  }
+  &__column-titles {
+    font-size: 30rem;
+    color: aqua;
+    &--workplace {
+      background-color: rgb(160, 234, 253);
+    }
+    &--firstAid {
+      background-color: rgb(247, 191, 191);
+    }
+    &--fitness {
+      background-color: rgb(158, 253, 155);
+    }
+  }
+  &__column--watched {
+    width: 15%;
+  }
+
+  &__row {
+    &--hidden {
+      &--item {
+      }
+      &--mediaType {
+        font-size: 4rem;
+      }
+      &--time {
+        font-size: 3rem;
+      }
+
+      &--title {
+        font-size: 2rem;
+      }
+      &--priority {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  &__body-wrap {
+    &--workplace {
+      background-image: linear-gradient(rgba(255, 255, 255, 0.527), rgba(255, 255, 255, 0.5)),
+    url("../../assets/images/background/helicopter.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+      &--hidden {
+        height: 30rem;
+        background-position: center;
+      }
+    }
+    &--first-aid {
+      background-image: url("../../assets/images/background/firstAidSnip.JPG");
+      &--hidden {
+        display: none;
+      }
+    }
+    &--fitness {
+      background-image: url("../../assets/images/background/fitness.JPG");
+      &--hidden {
+        display: none;
+      }
+    }
+  }
+}
+th {
+  border-bottom: 3px solid black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  background-color: rgba(162, 194, 207, 0.438);
+  &:hover {
+    font-size: 1.8rem;
+    text-decoration: underline;
+    background-color: rgb(220, 185, 243);
+  }
+}
+
+td {
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.experiment {
+  display: flex;
+  flex-direction: row;
+}

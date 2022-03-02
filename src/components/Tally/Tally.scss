@@ -1,0 +1,32 @@
+.tally{
+    // width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2%;
+    font-size: 2REM;
+    align-items: center;
+    // padding-left: 20rem;
+    // padding-right: 20rem;
+
+    &__popup{
+        // width: 60%;
+        display:flex;
+        justify-content: center;
+    
+
+    &__image{
+        width:60vw;
+        height: 60vh;
+        
+    }
+}
+    &__head {
+        font-weight: bold;
+    }
+}
+
+.tally__row {
+    display: flex;
+    justify-content: center;
+}
